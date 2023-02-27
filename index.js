@@ -15,6 +15,7 @@ const client = new Client({
 });
 
 client.on('messageCreate', async (message) => {
+  console.log(message.content);
   client.user.setActivity(message.content);
 });
 
